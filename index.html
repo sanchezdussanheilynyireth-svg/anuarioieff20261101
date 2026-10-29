@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Anuario Escolar 1101 · 2026 · I.E. Eugenio Ferro Falla</title>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Patrick+Hand&family=Permanent+Marker&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bar">
+  <button id="home">📖 Índice</button><button id="prev">◀</button><span id="pn"></span><button id="next">▶</button>
+  <button id="ed">✏️ Editar</button><button id="lst" title="Generar código para datos.js desde Excel">🧾 Datos</button><button id="sn" title="Sonido de página" aria-label="Sonido">🔊</button>
+  <select id="th" class="hide" aria-label="Estilo"></select>
+  <span id="pfx" class="hide"><select id="pr" aria-label="Sueño profesional"></select> <select id="av" aria-label="Sticker de personaje"></select> <input type="color" id="co" title="Color de la página" aria-label="Color" style="height:34px;width:42px;border:0;padding:0;background:none;vertical-align:middle"></span>
+</div>
+<div id="stage" class="stage"></div>
+<div id="md" class="md hide"><div><h3>Datos del anuario</h3>
+<p>Todo el contenido vive en <b>datos.js</b>. Aquí puedes convertir las respuestas de una hoja de cálculo en código listo para pegar ahí.</p>
+<p><b>Columnas</b> (sin encabezado): Nombre · Frase · Recuerdo · Aspiraciones (separadas con ;) · Agradecimientos.</p>
+<textarea id="im" placeholder="Pega aquí las filas copiadas de Excel o Google Sheets…"></textarea>
+<p><button id="gen">Generar código</button></p>
+<textarea id="out" readonly placeholder="Aquí aparece el bloque ESTUDIANTES para pegar en datos.js"></textarea>
+<p><button id="cp">Copiar</button> <button id="rs" title="Borra lo editado en este navegador; datos.js no se toca">♻ Borrar ediciones del navegador</button> <button id="cl">Cerrar</button></p></div></div>
+
+<script src="datos.js?v=20261029"></script>
+<script src="main.js?v=20261029"></script>
+</body>
+</html>
